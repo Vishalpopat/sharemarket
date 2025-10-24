@@ -38,6 +38,12 @@ class Settings:
         # API settings
         self.yahoo_timeout = 30
         self.max_retries = 3
+        self.auto_adjust = False  # Control yfinance auto_adjust behavior
+        
+        # F&O Analysis settings
+        self.fno_batch_size = 20
+        self.fno_confidence_threshold = 65.0
+        self.vix_thresholds = {'low': 18, 'high': 25}  # VIX level thresholds
         
         # Logging settings
         self.log_level = os.getenv("LOG_LEVEL", "INFO")
