@@ -12,15 +12,6 @@ A comprehensive, modular tool for Indian stock market analysis with predictions 
 - **Real-time Data**: Integration with market data providers
 - **Backtesting**: Historical performance analysis
 
-## Architecture
-
-The tool follows a clean, modular architecture with the following design patterns:
-
-- **Strategy Pattern**: Different trading strategies (intraday, swing, scalping)
-- **Factory Pattern**: Dynamic creation of analyzers and indicators
-- **Observer Pattern**: Real-time market data updates
-- **Adapter Pattern**: Multiple data source integrations
-- **Repository Pattern**: Data access abstraction
 
 ## Project Structure
 
@@ -41,17 +32,30 @@ src/
 ```
 
 ## Installation
+Prerequisite:
+Install Python
 
 1. Clone the repository
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+   Alternatively for virtualenv of python
+   ```bash
+   virtualenv venv --python=python3.10
+   .\venv\Scripts\pip.exe install -r .\requirements.txt
+   ```
 3. Configure your data sources in `config/settings.py`
 4. Run the application:
    ```bash
    python main.py
    ```
+   
+   Alternatively for virtualenv of python:
+   ```bash
+   .\venv\Scripts\python .\main.py
+   ```
+
 
 ## Configuration
 
